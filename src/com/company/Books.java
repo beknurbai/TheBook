@@ -2,14 +2,14 @@ package com.company;
 
 public class Books <T> implements Writable{
 private String Book;
-private int year;
+T year;
 private int rating;
 
-    public int getYear() {
-        return year;
+    public T getYear() {
+        return  year;
     }
 
-    public void setYear(int year) {
+    public void setYear(T year) {
         this.year = year;
     }
 
@@ -31,15 +31,15 @@ private int rating;
         this.Book = book;
     }
 
-    public Books(String nameBook,int year,int rating) {
+    public Books(String nameBook,T year,int rating) {
         this.Book = nameBook;
         this.year=year;
         this.rating=rating;
     }
 
     @Override
-    public Number WritingYear() {
-        return year;
+    public T WritingYear() {
+        return  year;
     }
 
     @Override
